@@ -10,10 +10,10 @@ body {
 .container {
     background: #fff;
     padding: 0 25px 25px 25px;
-    margin-bottom: 25px;
     border-bottom: 6px solid #ff6700;
     border-left: 6px solid #ff6700;
     border-right: 6px solid #ff6700;
+    min-height: 100vh;
 }
 
 .image-wrap {
@@ -22,11 +22,7 @@ body {
 }
 
 .button-row {
-    margin-top: 5px;
-}
-
-.gif-row {
-    margin-top: 10px;
+    margin-top: 8px;
 }
 
 .show-button,
@@ -51,20 +47,26 @@ body {
     color: white;
 }
 
-.inner-gif-div {
-    float: left;
-    margin: 10px 10px 0 10px;
-    min-height: 225px;
+.gif-images {
+    width: 100%;
 }
 
-.gifImage {
-    max-width: 225px;
-    border: 2px solid #ff6700;
+.inner-gif-div {
+    float: left;
+    width: 33%;
+    height: 250px;
+    padding: 0 5px;
+    margin-bottom: 15px;
 }
 
 p {
-    margin-bottom: 5px;
+    margin-bottom: 3px;
     margin-left: 0;
+}
+
+.gifImage {
+    width: 100%;
+    border: 2px solid #ff6700;
 }
 
 #input-area {
@@ -72,11 +74,49 @@ p {
 }
 
 #user-input {
-    border: 2px solid #555;
+    border: 2px solid #00B901;
+    background-color: #00B901;
+    color: #fff;
     border-radius: 35px;
     width: 100%;
+    padding: 2px 2px 2px 8px;
 }
 
 #submit-button {
     margin-left: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .inner-gif-div {
+        float: none;
+        min-width: 100%;
+        max-height: 100%;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+    /* .gifImage {
+        width: 100%;
+    } */
+}
+
+@media screen and (max-width: 991px) {
+    p {
+        margin: 10px 0;
+    }
+    .inner-gif-div {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    p {
+        margin-top: 15px;
+    }
+    .inner-gif-div {
+        width: 50%;
+        margin-bottom: 15px;
+    }
+    .gifImage {
+        width: 80%;
+    }
 }

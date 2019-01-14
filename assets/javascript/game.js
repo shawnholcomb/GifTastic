@@ -49,7 +49,7 @@ function grabGifs() {
                 var rating = response.rating;
                 var ratingUpper = rating.toUpperCase();
 
-                showGifs.append('<p>Rating: ' + response.rating);
+                showGifs.append('<p>Rating: ' + ratingUpper);
 
                 var displayGif = $('<img>').attr('src', response.images.downsized_still.url)
                     .addClass("gifImage")
