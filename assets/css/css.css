@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url("../images/bg1.jpg");
+    font-family: 'Coiny', cursive;
+}
+
+.container {
+    background: #fff;
+    padding: 0 25px 25px 25px;
+    margin-bottom: 25px;
+    border-bottom: 6px solid #ff6700;
+    border-left: 6px solid #ff6700;
+    border-right: 6px solid #ff6700;
+}
+
+.image-wrap {
+    display: block;
+    padding-top: 10px;
+}
+
+.button-row {
+    margin-top: 5px;
+}
+
+.gif-row {
+    margin-top: 10px;
+}
+
+.show-button,
+.submit-button {
+    background-color: #fff;
+    border: 2px solid #ff6700;
+    border-radius: 35px;
+    font-size: 16px;
+    box-shadow: 2px 2px 1px #d3d3d3;
+    margin: 5px;
+    padding: 2px 7px;
+}
+
+.submit-button {
+    margin-top: 10px;
+}
+
+.show-button:hover,
+.submit-button:hover {
+    background-color: #ff6700;
+    border: 2px solid #00B901;
+    color: white;
+}
+
+.inner-gif-div {
+    float: left;
+    margin: 10px 10px 0 10px;
+    min-height: 225px;
+}
+
+.gifImage {
+    max-width: 225px;
+    border: 2px solid #ff6700;
+}
+
+p {
+    margin-bottom: 5px;
+    margin-left: 0;
+}
+
+#input-area {
+    margin-top: 10px;
+}
+
+#user-input {
+    border: 2px solid #555;
+    border-radius: 35px;
+    width: 100%;
+}
+
+#submit-button {
+    margin-left: 0;
+}
