@@ -41,6 +41,10 @@ body {
     margin-top: 10px;
 }
 
+button {
+    border: none;
+}
+
 .show-button:hover,
 .submit-button:hover {
     background-color: #ff6700;
