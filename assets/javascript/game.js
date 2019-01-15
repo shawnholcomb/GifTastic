@@ -44,7 +44,7 @@ function grabGifs() {
             var result = results.data;
 
             result.forEach(function (response) {
-                var showGifs = $('<div>').addClass("inner-gif-div");
+                var showGifs = $('<div>').addClass("card");
 
                 var rating = response.rating;
                 var ratingUpper = rating.toUpperCase();
@@ -52,10 +52,12 @@ function grabGifs() {
                 showGifs.append('<p>Rating: ' + ratingUpper);
 
                 var displayGif = $('<img>').attr('src', response.images.downsized_still.url)
-                    .addClass("gifImage")
+                    .addClass("gifImage mx-auto")
                     .attr('data-state', "still")
                     .attr('data-still', response.images.downsized_still.url)
-                    .attr('data-animate', response.images.downsized_small.mp4);
+                    .attr('data-animate', response.images.original.url);
+
+                    console.log(response);
 
                 showGifs.append(displayGif);
 
@@ -69,6 +71,7 @@ function grabGifs() {
     $(document).on('click', '.gifImage', function() {
     
         var state = $(this).attr("data-state");
+        console.log(this.src);
         console.log(state);
     
         if (state === "still") {
