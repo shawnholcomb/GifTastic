@@ -41,8 +41,7 @@ body {
     margin-top: 10px;
 }
 
-button {
-    border: none;
+button:focus {
     outline: none;
 }
 
