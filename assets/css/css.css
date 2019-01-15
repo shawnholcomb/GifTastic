@@ -43,7 +43,6 @@ body {
 
 button:focus {
     outline: none;
-    border: none;
 }
 
 .show-button:hover,
