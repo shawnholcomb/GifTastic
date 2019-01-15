@@ -50,6 +50,11 @@ body {
 
 .gif-images {
     width: 100%;
+    z-index: 1;
+}
+
+.overlay {
+    background-color: #ff6700; 
 }
 
 .card {

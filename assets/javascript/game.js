@@ -52,17 +52,14 @@ function grabGifs() {
                 showGifs.append('<p>Rating: ' + ratingUpper);
 
                 var displayGif = $('<img>').attr('src', response.images.downsized_still.url)
-                    .addClass("gifImage mx-auto")
+                    .addClass("gifImage mx-auto play-pause")
                     .attr('data-state', "still")
                     .attr('data-still', response.images.downsized_still.url)
                     .attr('data-animate', response.images.original.url);
 
-                    console.log(response);
-
                 showGifs.append(displayGif);
 
                 $('#gif-images').prepend(showGifs);
-
             });
         });
     };
@@ -71,9 +68,7 @@ function grabGifs() {
     $(document).on('click', '.gifImage', function() {
     
         var state = $(this).attr("data-state");
-        console.log(this.src);
-        console.log(state);
-    
+        
         if (state === "still") {
             $(this).attr("src", $(this).attr("data-animate"))
               .attr("data-state", "animate")
