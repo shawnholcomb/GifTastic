@@ -4,6 +4,7 @@
 
 body {
     background: url("../images/bg1.jpg");
+    background-attachment: fixed;
     font-family: 'Coiny', cursive;
 }
 
