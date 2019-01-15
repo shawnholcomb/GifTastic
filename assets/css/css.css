@@ -43,6 +43,7 @@ body {
 
 button {
     border: none;
+    outline: none;
 }
 
 .show-button:hover,
